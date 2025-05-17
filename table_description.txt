@@ -1,0 +1,6 @@
+TABLE EMPLOYEE
+employee_id - The id of a particular employee (primary key)
+employee_firstname - The First name of the employee
+employee_lastname - The Last name of the employee
+employee_salary - The salary of the employee 
+employee_team - The team that the employee belongs to
