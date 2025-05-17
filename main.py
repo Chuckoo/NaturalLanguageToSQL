@@ -17,8 +17,10 @@ os.environ["GROQ_API_KEY"] = os.getenv('GROQ_API_KEY') # type: ignore
 os.environ["GOOGLE_API_KEY"] = os.getenv('GOOGLE_API_KEY') # type: ignore
 
 # Load the table description from a file
-with open("table_description.txt", "r") as f:
+with open("SQL/table_description.txt", "r") as f:
     table_description = f.read()
+
+print(table_description)
 
 class GraphState(TypedDict):
     """
@@ -140,7 +142,7 @@ workflow.add_edge('final_query',END)
 
 app = workflow.compile(checkpointer=memory)
 
-with open("question.txt", "r") as f:
+with open("SQL/question.txt", "r") as f:
     question = f.read()
 
 config = {"configurable": {"thread_id": "1"}}

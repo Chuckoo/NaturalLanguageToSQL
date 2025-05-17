@@ -8,7 +8,7 @@ STEPS TO RUN:
 1. Get both groq and gemini api keys and store them inside the .env file.
 2. Install the latest version of python (I developed this with python 3.12).
 3. Run the run.sh script OR install all the dependencies using `pip install -r requirements.txt` and then `py main.py`. It is recommended that you create a virtual environment and then activate before running these steps. If you run the script, this should be taken care for you.
-4. Update your table_description in the `table_description.txt` to whatever your SQL schema is. Similarly, update your query in `question.txt` to whatver you want to ask this agent.
+4. Update your table_description in the `SQL/table_description.txt` to whatever your SQL schema is. Similarly, update your query in `SQL/question.txt` to whatver you want to ask this agent.
 
 ![Image of Graph](https://github.com/Chuckoo/NaturalLanguageToSQL/blob/main/mermaid.png "Mermaid Image")
 
